@@ -1,0 +1,1 @@
+window.SLB&&SLB.has_child("View.extend_content_handler")&&function(e){SLB.View.extend_content_handler("image",{render:function(n,t){var i=new Image;return e(i).on("load",(function(r){!function(){n.set_data(i),n.set_attribute("dimensions",{width:i.width,height:i.height});var r=e("<img />",{src:n.get_uri()});t.resolve(r)}()})),i.src=n.get_uri(),t.promise()}})}(jQuery);
